@@ -52,3 +52,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "cssbundling-rails", "~> 0.2.4"
+
+gem "foreman", "~> 0.87.2"
