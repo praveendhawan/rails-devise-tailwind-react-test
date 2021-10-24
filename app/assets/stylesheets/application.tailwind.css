@@ -1,6 +1,4 @@
-/*
- *= require pages
- */
 @tailwind base;
 @tailwind components;
+@import 'pages.css';
 @tailwind utilities;
