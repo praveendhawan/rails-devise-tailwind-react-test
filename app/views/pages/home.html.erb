@@ -1,4 +1,14 @@
-<div id="myapp" class="heading"></div>
+<div
+    id="myapp"
+    class="heading"
+    data-user-email="<%= current_user&.email %>"
+    data-signin-url="<%= new_user_session_path %>"
+    data-signup-url="<%= new_user_registration_path %>"
+    data-logout-url="<%= destroy_user_session_path %>"
+></div>
 <p class="heading-gradient">
- Find me in app/views/pages/home.html.erb
+  Find me in app/views/pages/home.html.erb
 </p>
+<% if current_user %>
+  <%= button_to "Log out", destroy_user_session_path, method: :delete %>
+<% end %>
